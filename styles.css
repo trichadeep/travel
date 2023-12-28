@@ -1,0 +1,407 @@
+/* Add your own styling here */
+
+body {
+            margin: 0;
+            font-family: 'Arial', sans-serif; /* Use a suitable font */
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700; /* Change the color on hover */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+		
+		
+
+        .background-image {
+            background-image: url('brand_bg.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .welcome-text {
+            font-size: 24px;
+        }
+
+        .place-name {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+
+        .book-now-button {
+            padding: 10px 20px;
+            background-color: #ffd700;
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+		.t{
+			color:#ffd700
+		}
+        .row {
+            display: flex;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            flex: 50%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea, button {
+            margin-bottom: 16px;
+            padding: 8px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .package-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .package-card {
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .package-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            color: #FFD700; /* Set the default star color to yellow */
+        }
+
+        .grey-star {
+            color: #808080; /* Set the color of the unselected stars to grey */
+        }
+		
+button {
+    cursor: pointer;
+    background-color: #FFD700; /* Set the default star color to yellow */
+    color: #333; /* Set the text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    background-color: #ffd000; /* Set a slightly darker shade on hover */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for required fields */
+label.required::after {
+    content: ' *';
+    color: #FF0000;
+}
+
+/* Style for the error message */
+.error-message {
+    color: #FF0000;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* Your existing styles go here */
+
+/* Style for service cards */
+.services-section {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: calc(33.333% - 20px);
+    max-width: 200px; /* Set a maximum width */
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card h3 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Style for Gallery section */
+    .gallery-section {
+        margin: 20px 0;
+    }
+
+    .image-gallery {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .gallery-image {
+        width: calc(33.333% - 20px);
+        max-width: 300px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery-image:hover {
+        transform: scale(1.1);
+    }
+
+
+/* Style for About Us section */
+    .about-us-section {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+
+    .about-us-image {
+        width: 50%;
+    }
+
+    .about-us-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-us-info {
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    .about-us-info h2 {
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .about-us-info p {
+        color: #666;
+        line-height: 1.6;
+    }
+
+/* Style for Footer section */
+    .footer-section {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .brand-info {
+        flex: 1;
+    }
+
+    .brand-info p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+/* Style for the Registration Modal */
+    .modal {
+         display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 35%; /* Set the width to 50% */
+        margin: auto; /* Center align the modal */
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* Additional styles for form and links */
+    .reg-form {
+        display: grid;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    
+
+    .reg-button {
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .redirect-login {
+        margin-top: 20px;
+    }
+
+    .redirect-login p {
+        font-size: 14px;
+    }
+
+    .redirect-login a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .redirect-login a:hover {
+        text-decoration: underline;
+    }
+	
+	/* Style for the Login Modal */
+    #loginModal .modal-content {
+        background-color: #fefefe;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 35%;
+        margin: auto;
+    }
+
+    .redirect-register {
+        margin-top: 20px;
+    }
+
+    .redirect-register p {
+        font-size: 14px;
+    }
+
+    .redirect-register a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .redirect-register a:hover {
+        text-decoration: underline;
+    }
